@@ -2,8 +2,6 @@ import React from "react";
 import "./CV.css";
 
 interface ContactInfo {
-  phone: string;
-  email: string;
   linkedin: string;
   github: string;
 }
@@ -45,15 +43,13 @@ interface CVData {
 const cvData: CVData = {
   name: "Mathis Fajeau",
   contact: {
-    phone: "+33 7 60 09 62 71",
-    email: "fajeaumathis8@gmail.com",
     linkedin: "linkedin.com/in/mathis-f-210793259/",
     github: "github.com/ZWhimsi",
   },
   profile:
     "Software Engineer with dual Master's degrees in Computer Science and Engineering, specializing in AI-powered applications and modern web development. Passionate about building intelligent, scalable systems that empower users. Strong foundation in full-stack development with React/TypeScript, Python, and C++. Proven track record delivering production-ready ML solutions with operational excellence.",
   technicalSkills: {
-    Languages: "JavaScript, TypeScript, Python, C++, C#, Java, C",
+    Languages: "JavaScript, TypeScript, Python, C++, Java, C",
     Frontend: "React, TypeScript, Modern Web Dev, Responsive Design",
     "AI/ML": "PyTorch, TensorFlow, LLMs, Agent Systems, MLOps, NLP",
     Backend: "REST APIs, Scalable Architecture, Microservices",
@@ -184,15 +180,6 @@ const CV: React.FC = () => {
         <section className="cv-section">
           <h2>Contact</h2>
           <div className="contact-info">
-            <p>
-              <i className="icon-phone"></i> {cvData.contact.phone}
-            </p>
-            <p>
-              <i className="icon-email"></i>{" "}
-              <a href={`mailto:${cvData.contact.email}`}>
-                {cvData.contact.email}
-              </a>
-            </p>
             <p>
               <i className="icon-linkedin"></i>{" "}
               <a
