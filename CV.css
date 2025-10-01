@@ -1,0 +1,301 @@
+/* CV Microsoft Stylesheet */
+
+:root {
+  --primary-blue: #0078d4;
+  --dark-blue: #1a1a3a;
+  --light-gray: #f3f2f1;
+  --medium-gray: #605e5c;
+  --border-gray: #e1dfdd;
+  --white: #ffffff;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.cv-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: var(--white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Styles */
+.cv-sidebar {
+  flex: 0 0 35%;
+  background: var(--light-gray);
+  padding: var(--spacing-xl);
+  border-right: 3px solid var(--primary-blue);
+}
+
+.cv-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.cv-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark-blue);
+  line-height: 1.2;
+  margin-bottom: var(--spacing-lg);
+}
+
+.cv-section {
+  margin-bottom: var(--spacing-lg);
+}
+
+.cv-section h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-xs);
+  border-bottom: 2px solid var(--primary-blue);
+}
+
+.contact-info p {
+  margin-bottom: var(--spacing-sm);
+  font-size: 0.9rem;
+}
+
+.contact-info a {
+  color: var(--dark-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: var(--primary-blue);
+}
+
+.profile-text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.skills-list,
+.coursework-list,
+.languages-list,
+.values-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-list li,
+.coursework-list li,
+.languages-list li,
+.values-list li {
+  margin-bottom: var(--spacing-sm);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.skills-list strong,
+.coursework-list strong,
+.languages-list strong,
+.values-list strong {
+  color: var(--dark-blue);
+  display: block;
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Main Content Styles */
+.cv-main {
+  flex: 1;
+  padding: var(--spacing-xl);
+}
+
+.cv-section-main {
+  margin-bottom: var(--spacing-xl);
+}
+
+.cv-section-main h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 3px solid var(--primary-blue);
+}
+
+/* Experience Styles */
+.experience-item {
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-md);
+}
+
+.experience-header h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--dark-blue);
+  margin-bottom: var(--spacing-xs);
+}
+
+.company {
+  font-weight: 600;
+  font-style: italic;
+  color: var(--medium-gray);
+}
+
+.experience-meta {
+  text-align: right;
+}
+
+.location,
+.period {
+  font-size: 0.9rem;
+  color: var(--medium-gray);
+  font-style: italic;
+}
+
+.achievements,
+.details,
+.project-description {
+  list-style: disc;
+  padding-left: var(--spacing-lg);
+  margin-top: var(--spacing-sm);
+}
+
+.achievements li,
+.details li,
+.project-description li {
+  margin-bottom: var(--spacing-sm);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Education Styles */
+.education-item {
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.education-item:last-child {
+  border-bottom: none;
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-md);
+}
+
+.education-header h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--dark-blue);
+  margin-bottom: var(--spacing-xs);
+}
+
+.degree {
+  font-weight: 600;
+  font-style: italic;
+  color: var(--medium-gray);
+}
+
+.education-meta {
+  text-align: right;
+}
+
+/* Project Styles */
+.project-item {
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.project-item:last-child {
+  border-bottom: none;
+}
+
+.project-item h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark-blue);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Responsive Design */
+@media print {
+  .cv-container {
+    box-shadow: none;
+  }
+  
+  .cv-sidebar,
+  .cv-main {
+    padding: var(--spacing-md);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cv-container {
+    flex-direction: column;
+  }
+  
+  .cv-sidebar {
+    flex: 1;
+    border-right: none;
+    border-bottom: 3px solid var(--primary-blue);
+  }
+  
+  .experience-header,
+  .education-header {
+    flex-direction: column;
+  }
+  
+  .experience-meta,
+  .education-meta {
+    text-align: left;
+    margin-top: var(--spacing-sm);
+  }
+}
+
+/* Icon placeholders (use FontAwesome or similar) */
+.icon-phone::before,
+.icon-email::before,
+.icon-linkedin::before,
+.icon-github::before {
+  content: "📱 ";
+  margin-right: var(--spacing-xs);
+}
+
+.icon-email::before {
+  content: "✉️ ";
+}
+
+.icon-linkedin::before {
+  content: "💼 ";
+}
+
+.icon-github::before {
+  content: "🔗 ";
+}
